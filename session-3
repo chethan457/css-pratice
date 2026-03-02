@@ -1,0 +1,113 @@
+------------------------------------------------------ index -----------------------------------------
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratice set 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="content">
+      <header>
+        <a href="#" class="sp1">amazon.in</a>
+        <a href="#" class="sp2">Account</a>
+        <a href="#" class="sp3">My cart</a>
+        <a href="#" class="sp4">Contact us</a>
+        <input type="text" placeholder="   Seacrh...." class="sp5" />
+        <button class="sp6">Submit</button>
+      </header>
+      <div class="box">
+        <div class="bx bx1">box 1</div>
+        <div class="bx bx2">box 2</div>
+        <div class="bx bx3">box 3</div>
+      </div>
+    </main>
+
+    <footer>amazon.in@gamil.com</footer>
+  </body>
+</html>
+
+
+
+--------------------------------------------------------- style -----------------------------------------------
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+header {
+  background-color: #0f1111;
+  height: 60px;
+  margin-bottom: 100px;
+}
+button {
+  background-color: #f08804;
+
+  width: 50px;
+  color: black;
+  border-radius: 5px;
+}
+
+a {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+.sp1 {
+  font-size: 25px;
+}
+
+.sp5 {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.bx {
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bx1 {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.bx2 {
+  background-color: rgba(0, 0, 255, 0.75);
+}
+.bx3 {
+  background-color: rgba(0, 0, 255, 1);
+}
+
+footer {
+  background-color: #0f1111;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
