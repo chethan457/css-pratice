@@ -1,0 +1,90 @@
+---------------------------------------------------------- index ---------------------------------------------------
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Nav Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="sp1">amazon.in</div>
+      <div class="sp2">Account</div>
+      <div class="sp3">My cart</div>
+      <div class="sp4">Contact us</div>
+      <div class="sp5">
+        <form class="form">
+          <input type="text" placeholder="    Search..." />
+          <!-- <div class="spacer"></div> -->
+          <button>Search</button>
+          <!-- <div class="spacer"></div> -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+---------------------------------------------------------- style --------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #0f1111;
+  height: 40px;
+  color: white;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 2px;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp1 {
+  flex: 1;
+  font-size: 25px;
+}
+
+.sp2 {
+  flex: 1;
+}
+
+.sp3 {
+  flex: 1;
+}
+
+.sp4 {
+  flex: 1;
+}
+
+.sp5 {
+  flex: 2;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.form input {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.form button {
+  margin: 0 10px 0 10px;
+  background-color: #f08804;
+  border-radius: 5px;
+  width: 100px;
+}
